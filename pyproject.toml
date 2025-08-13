@@ -10,6 +10,8 @@ dependencies = [
     "openai>=1.0.0",
     "python-dotenv>=1.0.0",
     "tokencost>=0.1.26",
+    "openai-agents>=0.2.6",
+    "streamlit>=1.48.1",
 ]
 
 [project.optional-dependencies]

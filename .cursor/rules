@@ -1,0 +1,54 @@
+# Cursor Rules for LLM Prompt Debugging Environment
+
+## Project Context
+
+This is a Python project for debugging and experimenting with LLM prompts using Jupyter Notebooks.
+
+## Code Style
+
+- Use Black for Python formatting (line length: 88)
+- Use Ruff for linting
+- Follow PEP 8 conventions
+- Use type hints where appropriate
+- Write docstrings for all functions and classes
+
+## Project Structure
+
+- `utils/` - Core utility modules for LLM interaction
+- `notebooks/` - Jupyter notebooks for experiments
+- `00_TEMPLATE.ipynb` - Base template for new notebooks
+
+## LLM Integration Guidelines
+
+- Always use the LLMClient class for API interactions
+- Handle API errors gracefully with try/catch blocks
+- Display responses using notebook_helpers functions
+- Log experiments for future reference
+
+## Notebook Best Practices
+
+- Start with the template notebook
+- Use markdown cells for documentation
+- Display prompts and responses clearly
+- Track experiments and chat history
+- Include configuration cells at the top
+
+## Dependencies
+
+- Core: jupyter, ipykernel, python-dotenv, rich
+- LLM APIs: openai, anthropic
+- Dev tools: ruff, black
+
+## Environment Setup
+
+- Use `.env` file for API keys (never commit)
+- Copy `env.example` to `.env` and fill in keys
+- Run `uv sync` to install dependencies
+- Start with `uv run jupyter lab`
+
+## Common Tasks
+
+- Create new notebook: copy `00_TEMPLATE.ipynb`
+- Test different providers by changing PROVIDER variable
+- Compare responses using comparison functions
+- Save experiments using logging functions
